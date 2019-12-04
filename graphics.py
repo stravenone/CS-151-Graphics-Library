@@ -1,3 +1,14 @@
+import tkinter
+#creates window
+window = tkinter.Tk()
+window.title("GUI")
+
+# creates canvas
+canvas = tkinter.Canvas(window, width = 500, height = 500)
+canvas.pack()
+
+
+
 class hexagon(object):
     def __init__(self):
         self.center_x = None
