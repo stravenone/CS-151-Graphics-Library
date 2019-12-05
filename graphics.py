@@ -47,12 +47,16 @@ class hexagon(object):
         canvas.create_polygon(point1, point2, point3, point4, point5, point6, fill=color, outline = outline, width = width)
         
         
-class Triangle():
+class Triangle(object):
     def _init_(self):
         self.color=''
         self.outline=''
         self.width=None
-    
+        self.starting_point=None
+        self.secondary_point=None
+        self.third_point=None
+        
+        
     def fill_color(self,color):
         self.color=color
     
@@ -69,13 +73,13 @@ class Triangle():
         self.x1=x1
         self.y1=y1
     
-    def starting_point(self,x2,y2):
+    def secondary_point(self,x2,y2):
         self.x2=x2
         self.y2=y2
    
-def starting_point(self,x3,y3):
-        self.x1=x3
-        self.y1=y3
+    def third_point(self,x3,y3):
+        self.x3=x3
+        self.y3=y3
     
     def triangle_points(self,x1,y1):
         x1=self.x1
