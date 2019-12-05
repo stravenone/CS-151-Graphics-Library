@@ -1,4 +1,5 @@
 import tkinter
+import graphics
 #creates window
 window = tkinter.Tk()
 window.title("GUI")
